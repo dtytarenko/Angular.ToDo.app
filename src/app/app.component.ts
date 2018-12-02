@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  public tasks = [];
+
   title = 'todo';
+  public form: FormGroup = new FormGroup({
+    task: new FormControl ()
+  });
+
+  submit() {
+    this.tasks.push(this.form.value.task);
+    this.form.reset();  
+    console.log(this.tasks);
+  }
+
 }
