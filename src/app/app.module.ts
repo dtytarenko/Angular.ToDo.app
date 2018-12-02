@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule, MatInputModule, MatFormFieldModule, MatButtonModule} from '@angular/material';
+import { MatCardModule, MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule} from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -20,6 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     MatFormFieldModule,
     MatButtonModule,
+    MatIconModule,
     AppRoutingModule
   ],
   providers: [],
